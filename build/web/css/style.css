@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: #242424;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1100px;
+    width: calc(100% - 2rem);
+    margin-inline: auto;
+    padding-block: 3rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginContainer {
+    padding: 3rem 2rem;
+    background-color: #daf0ff;
+    border-radius: 1rem;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.01);
+}
+
+h1 {
+    margin-bottom: 2.6rem;
+    font-size: 3.4rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    width: 350px;
+    padding: 10px 22px;
+    font-size: 1.2rem;
+    outline: 1px solid #fff;
+    border: none;
+    border-radius: .5rem;
+    margin-bottom: 14px;
+}
+
+input:focus {
+    outline: 1px solid darkcyan;
+}
+
+input:nth-child(1):invalid {
+    outline: 1px solid red;
+}
+
+.loginBtn {
+    padding: 10px 22px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 1rem;
+    background: #77B1D4;
+    border: none;
+    color: #fff;
+    transition: background ease-in-out .3s;
+    border-radius: .5rem;
+}
+
+.loginBtn:hover {
+    background: #517891;
+    cursor: pointer;
+}
+
+.galleryContainer {
+    height: 600px;
+    width: 100%;
+    background-image: url("../assets/images/img.jpg");
+    background-size: cover;
+}
